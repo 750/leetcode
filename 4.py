@@ -1,6 +1,6 @@
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        # O(log(min(m,n))) solution
+        # O(log(min(m,n))) solution: binary search through the smaller array
         
         # to binsearch the smaller array
         if len(nums1) > len(nums2):

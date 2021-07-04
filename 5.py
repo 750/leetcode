@@ -1,5 +1,7 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        # O(n) linear solution: Manacher's algorithm
+
         s = "!"+"!".join(s)+"!"
         deltas = [-1 for i in range(len(s))]
         deltas[0] = 0
